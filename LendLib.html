@@ -1,0 +1,21 @@
+<head>
+  <title>Lending Library</title>
+</head>
+
+<body>
+	<h1>Lending Library</h1>
+  <div id="categories-container">
+  	{{> categories}}
+  </div>
+</body>
+
+<template name="categories">
+	<h2 id="title">My Stuff</h2>
+	<div id="categories" class="btn-group">
+		{{#each lists}}
+			<div class="category btn btn-inverse">
+				{{Category}}
+			</div>
+		{{/each}}
+	</div>
+</template>
